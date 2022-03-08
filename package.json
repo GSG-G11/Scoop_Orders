@@ -1,29 +1,30 @@
 {
   "name": "scoop_orders",
   "version": "1.0.0",
-  "description": "",
+  "description": "![](https://i.imgur.com/3YCij3u.png)",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon /server /index.js",
+    "dev": "nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GSG-G11/Scoop_Orders.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GSG-G11/Scoop_Orders/issues"
   },
   "homepage": "https://github.com/GSG-G11/Scoop_Orders#readme",
+  "dependencies": {
+    "env2": "^2.2.2",
+    "express": "^4.17.3",
+    "pg": "^8.7.3"
+  },
   "devDependencies": {
     "jest": "^27.5.1",
     "nodemon": "^2.0.15"
-  },
-  "dependencies": {
-    "env2": "^2.2.2",
-    "node": "^17.5.0",
-    "pg": "^8.7.3"
   }
 }
