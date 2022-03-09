@@ -25,9 +25,9 @@
         <h1>Add your info👇🏻 </h1>
         <div class="button-awesome">
           <form class="form" action="/create-order" method="post">
-            <input type="text" name="name" value="" class="btn btn-half" placeholder="name" />
-            <input type="text" name="location" value="" class="btn btn-half" placeholder="location" />
-            <input type="text" name="phone" value="" class="btn btn-half"  placeholder="059#######" />
+            <input type="text" name="name" value="" class="btn btn-half" placeholder="name" required/>
+            <input type="text" name="location" value="" class="btn btn-half" placeholder="location" required/>
+            <input type="number" name="phone" value="" size="10"  class="btn btn-half"  placeholder="059#######"required />
             <button type="submit" name="button" class="btn btn-half">
               Create order
             </button>
@@ -35,6 +35,5 @@
         </div>
       </div>
     </header>
-    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

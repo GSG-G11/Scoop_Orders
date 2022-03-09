@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const path = require("path");
-const {addUser,addOrder} = require("../database/queries/postData");
-const { getUsers, getMenu } = require("../database/queries/getData");
+const { addUser, addOrder } = require("../database/queries/postData");
+const { getUsers, getMenu, getOrders } = require("../database/queries/getData");
 
 router.post("/create-order", (req, res) => {
   addUser(req.body.name, req.body.location, req.body.phone).then((data) =>
@@ -10,20 +10,17 @@ router.post("/create-order", (req, res) => {
   );
 });
 router.get("/get-users", (req, res) => {
-  getUsers()
-    // .then((data) => console.log(data))
-    .then((data) => res.json(data));
+  getUsers().then((data) => res.json(data.rows));
 });
 router.get("/get-menu", (req, res) => {
-  getMenu()
-    // .then((data) => console.log(data.rows))
-    .then((data) => res.json(data.rows));
+  getMenu().then((data) => res.json(data.rows));
 });
-router.post("/go-to-order", (req,res) => {
-  addOrder(req.body.title,req.body.price)
-  // .then((data) =>console.log(data.rows))
-  .then((data) =>res.redirect("/all_orders.html"));
+router.post("/addOrder", (req, res) => {
+  addOrder(req.body.id).then((data) => res.json({ msg: "done" }));
+});
 
-})
+router.get("/orders", (req, res) => {
+  getOrders().then((data) => res.json(data.rows));
+});
 
 module.exports = router;
