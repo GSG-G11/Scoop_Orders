@@ -1,4 +1,3 @@
-
 BEGIN;
 
 DROP TABLE IF EXISTS users,orders,menu CASCADE;
@@ -24,9 +23,6 @@ CREATE TABLE orders (
   FOREIGN KEY (menu_id) REFERENCES menu(id)
 );
 INSERT INTO menu (name, price) VALUES ('لقيمات بالنوتيلا',8),('لقيمات باللوتس',10),('لقيمات بالنوتيلا والايس كريم',10) ,('كريب بالنوتيلا',10),('بان كيك بالنوتيلا',12),('نوتيلا مولتن كيك',10);
--- INSERT INTO orders (USER_id,MENU_id) VALUES (1,1),(1,2),(1,3),;
 
-
-INSERT INTO users (name, location,number) VALUES ('mostafa','Gaza',0592253301) , ( 'zuhdi','Gaza',0592253301);
 
 COMMIT;

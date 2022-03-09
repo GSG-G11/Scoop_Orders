@@ -8,13 +8,12 @@ const addUser = (name, location, number) => {
   return connection.query(sql);
 };
 
-const addOrder = (name, price) => {
+const addOrder = (id) => {
   const sql = {
-    text: "INSERT INTO orders (name, price) VALUES ($1, $2) RETURNING *;",
-    values: [name, price],
+    text: "INSERT INTO orders (menu_id) VALUES ($1) RETURNING *;",
+    values: [id],
   };
   return connection.query(sql);
 };
 
-
-module.exports = {addUser,addOrder};
+module.exports = { addUser, addOrder };

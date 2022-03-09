@@ -1,17 +1,93 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  font-family: "Catamaran", sans-serif;
-}
-
 body {
   background-image: url("https://scontent.fgza2-1.fna.fbcdn.net/v/t39.30808-6/275146223_500844958302288_4119212478432717430_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=100&ccb=1-5&_nc_sid=e3f864&_nc_ohc=rQ0D9z1Xj0EAX8wxa5k&_nc_ht=scontent.fgza2-1.fna&oh=00_AT8UulliPlFkYqAu5zKlUWvRfL6BkkejQgWtxC8ujryTqw&oe=622E0F99");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
+    "AppleGothic", sans-serif;
+  color: white;
+  font-size: 16px;
+  overflow-y: scroll;
+}
+
+#container {
+  background-color: #34373e;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+table {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+tr {
+  padding: 0;
+  margin: 0;
+}
+
+td {
+  border: 0.1px solid white;
+  padding: 5px 2px;
+}
+
+.image {
+  width: 150px;
+}
+
+.image > img {
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+}
+
+.main-nav {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav li {
+  background-color: #34373e;
+  border-radius: 10%;
+  width: 7rem;
+  height: 4rem;
+  text-align: center;
+  margin-left: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+}
+
+.logout {
+  height: 100%;
+}
+.Orders,
+.logout {
+  background-color: #34373e;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.logout:hover {
+  background-color: red;
+  transition: all 0.5s ease-in;
+}
+.logoutLi:hover {
+  background-color: red;
+  transition: all 0.5s ease-in;
+}
+.Orders:hover {
+  height: none;
+  color: #e67e22;
+  border-bottom: 2px solid #e67e22;
+  transition: all 0.5s ease-in;
+  padding: 15px 0;
 }
