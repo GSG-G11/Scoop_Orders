@@ -8,5 +8,13 @@ const getUsers = () => {
 
   return connection.query(sql);
 };
+const getMenu = () => {
+  const sql = {
+    text: "SELECT * FROM menu;",
+    values: [],
+  };
 
-module.exports = getUsers;
+  return connection.query(sql);
+};
+
+module.exports = {getUsers,getMenu};
