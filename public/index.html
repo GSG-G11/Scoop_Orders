@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <title>Document</title>
-</head>
-<body>
-  <form class="form" action="/create-order" method="post">
-    <input type="text" name="name" value="" placeholder="name">
-    <input type="text" name="location" value="" placeholder="location">
-    <input type="text" name="phone" value="" placeholder="059#######">
-    <button type="submit" name="button">Create order</button>
-</form>
-<script type="text/javascript" src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="logo">
+          <img
+            src="assets/275245472_500855048301279_823773588529135759_n.jpeg"
+          />
+        </div>
+        <ul class="main-nav">
+          <li><a href="">OUR STORY</a></li>
+          <li><a href="">MENU</a></li>
+        </ul>
+      </div>
+      <div class="hero">
+        <h1>Add your info👇🏻 </h1>
+        <div class="button-awesome">
+          <form class="form" action="/create-order" method="post">
+            <input type="text" name="name" value="" class="btn btn-half" placeholder="name" />
+            <input type="text" name="location" value="" class="btn btn-half" placeholder="location" />
+            <input type="text" name="phone" value="" class="btn btn-half"  placeholder="059#######" />
+            <button type="submit" name="button" class="btn btn-half">
+              Create order
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
 </html>

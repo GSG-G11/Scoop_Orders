@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: tahoma;
+}
+
+.hero {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://scontent.fgza2-1.fna.fbcdn.net/v/t39.30808-6/275146223_500844958302288_4119212478432717430_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=100&ccb=1-5&_nc_sid=e3f864&_nc_ohc=rQ0D9z1Xj0EAX8wxa5k&_nc_ht=scontent.fgza2-1.fna&oh=00_AT8UulliPlFkYqAu5zKlUWvRfL6BkkejQgWtxC8ujryTqw&oe=622E0F99);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.main-nav {
+  list-style: none;
+  float: right;
+  margin-right: -150px;
+  margin-top: 30px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+.main-nav li a:hover {
+  color: #e67e22;
+  border-bottom: 2px solid #e67e22;
+  transition: all 0.5s ease-in;
+  padding: 15px 0;
+}
+
+.logo img {
+  border-radius: 50%;
+  float: left;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: -150px;
+}
+
+.btn {
+  border: 1px solid #e67e22;
+  padding: 10px 30px;
+  color: #e67e22;
+  text-decoration: none;
+  border-radius: 12px;
+  margin-right: 15px;
+}
+
+.button-awesome {
+  margin-top: 40px;
+}
+
+.btn-half:hover {
+  background-color: #e67e22;
+  color: white;
+  transition: all 0.5s ease-in;
+}
+
+.btn-full:hover {
+  background-color: #e67e22;
+  color: white;
+  transition: all 0.5s ease-in;
+}
