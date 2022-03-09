@@ -16,5 +16,10 @@ const getMenu = () => {
 
   return connection.query(sql);
 };
-
+const getorders = () =>{
+  const sql = {
+    text: "",
+    values: [],
+  }
+}
 module.exports = { getUsers, getMenu };
