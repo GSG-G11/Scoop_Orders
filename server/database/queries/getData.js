@@ -17,4 +17,4 @@ const getMenu = () => {
   return connection.query(sql);
 };
 
-module.exports = {getUsers,getMenu};
+module.exports = { getUsers, getMenu };

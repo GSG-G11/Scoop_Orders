@@ -1,16 +1,15 @@
 const express = require("express");
 const router = express.Router();
+const path = require("path");
 const addUser = require("../database/queries/postData");
-const {getUsers,getMenu} = require("../database/queries/getData");
-
+const { getUsers, getMenu } = require("../database/queries/getData");
 
 router.post("/create-order", (req, res) => {
   addUser(req.body.name, req.body.location, req.body.phone).then((data) =>
-    console.log(data.rows)
+    res.redirect("/menu.html")
   );
-  res.redirect("/menu.html");
 });
-router.get("/get-order", (req, res) => {
+router.get("/get-users", (req, res) => {
   getUsers()
     // .then((data) => console.log(data))
     .then((data) => res.json(data));
