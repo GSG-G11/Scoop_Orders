@@ -2,12 +2,11 @@
 
 ## Purpose
 
-Build a app to buy the scoop products
+Build app to buy from scoop products
 
 ## Team Members
 
 ##### Mostafa Naeem Qanoo
-
 ##### Mahmoud Ahmad Al-Hato
 
 ## Site URL:
