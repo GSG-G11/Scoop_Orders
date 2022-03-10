@@ -2,7 +2,7 @@ const connection = require("../config/connection");
 
 const getUsers = () => {
   const sql = {
-    text: "SELECT (name,location,number) FROM users ORDER BY id LIMIT 1;",
+    text: "SELECT (name,location,number) FROM users ORDER BY id DESC LIMIT 1;",
     values: [],
   };
 
